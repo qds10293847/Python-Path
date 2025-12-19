@@ -1,0 +1,5 @@
+bill = int(input('How much is the bill?\n$'))
+group_size = int(input('How many people are there?\n'))
+tip = int(input('How big will the tip be? 8%, 10% or 12%?\n'))
+split = round((bill * ((100 + tip)/100))/group_size, 2)
+print(f'Each person will contribute ${split}')
