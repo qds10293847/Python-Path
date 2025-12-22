@@ -1,13 +1,16 @@
 # measurement input
-meters_or_feet = input('What is your prefered unit of measurement? Meters or Feet?\n').lower()
+meters_or_feet = input('What is your prefered unit of measurement? meter or feet?\n').lower()
 
-# variables
-# gravity = [9.81,32.17]
+# Fixed variables
+if meters_or_feet == 'meter':
+    gravity = 9.81
+elif meters_or_feet == 'feet':
+    gravity = 32.17
 # hatsan_mod85_muzzle_velocity = [245,800]
 # total_distance = [50,164.042]
 
 # bullet drop function
-def bullet_drop(muzzle_velocity, gravity, max_distance):
+def bullet_drop(muzzle_velocity, max_distance):
     t = []
     b_drop = []
     height = []
